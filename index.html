@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishan Consulting Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Altered styles for submenu visibility */
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #fff; /* Background color for submenu */
+            padding: 10px;
+        }
+
+        nav ul ul li {
+            display: block;
+            margin-right: 0;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        /* Rest of your CSS styles */
+        /* ... */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Nishan Consulting Firm</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li>
+                        <a href="#products">Products</a>
+                        <ul class="submenu">
+                            <li><a href="Fastners.html">Fasteners</a></li>
+                            <li><a href="welding.html">Welding</a></li>
+                            <li><a href="printed_circut_board.html">PCB's</a></li>
+                            <li><a href="machining.html">Machining</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home">
+        <div class="container">
+            <!-- Banner Section -->
+            <div class="banner">
+                <!-- Image or Slider -->
+                <h2>Welcome to Nishan</h2>
+                <p>
+                    Dedicated to exceeding customer expectations, Nishan is committed to providing products of the highest quality. Our operations, based in Allentown Pennsylvania,  encompass custom machining and component manufacturing of diverse electrical and mechanical parts. Our extensive services include CNC plasma/laser cutting, CNC machining, sheet metal fabrications, 3D printing and PCB design, layout and assembly.
+
+
+                </p>
+
+                <p>
+                    At Nishan, serving customers with integrity,  professionalism and a relentless pursuit of excellence is our mission. By leveraging our collective experiences and expertise, we strive to deliver tailored solutions that meet the highest standards of precision, quality and reliability. Our commitment to customer satisfaction drives us to constantly innovate and provide unparalleled value in the field of design engineering and manufacturing.
+
+                </p>
+            </div>
+
+            <!-- CTA Section -->
+        </div>
+    </section>
+
+    <!-- Other Sections (Services, About Us, Contact, etc.) -->
+
+    <footer>
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="footer-info">
+                <h3>Contact Information</h3>
+                <p>Address: 145 Mickley Rd Office 101, Whitehall PA, 18052</p>
+                <p>Email: asimjan@nishanltd.com</p>
+                <p>Phone: 202-492-6099</p>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2023 Nishan. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="subMenus.js"></script>
+</body>
+
+</html>
