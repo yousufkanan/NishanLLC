@@ -10,41 +10,112 @@
         /* Add custom styles here */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
         }
 
-        /* Altered styles for submenu visibility */
-        nav ul ul {
-            display: none;
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Highlight the hovered menu items */
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        /* END: Styles from index.html */
+
+        /* BEGIN: Styles from about_us.html */
+        h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+          
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .footer-info {
+            margin-bottom: 20px;
+        }
+
+        /* BEGIN: Styles for products sub menu */
+        .submenu {
             position: absolute;
-            background-color: #fff; /* Background color for submenu */
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            color: #fff;
             padding: 10px;
+            display: none;
         }
 
-        nav ul ul li {
+        .submenu li {
             display: block;
-            margin-right: 0;
+            margin-bottom: 5px;
         }
 
-        nav ul li:hover > ul {
-            display: block;
+        .submenu li a {
+            color: #fff;
+            text-decoration: none;
         }
 
-        /* Rest of your CSS styles */
-        /* ... */
-
+        /* END: Styles for products sub menu */
     </style>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>Nishan Consulting Firm</h1>
+            <h1><a href="index.html" style="color: white; text-decoration: none;">Nishan Consulting Firm</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li>
                         <a href="#products">Products</a>
@@ -94,18 +165,9 @@
                 <p>Email: asimjan@nishanltd.com</p>
                 <p>Phone: 202-492-6099</p>
             </div>
-            <div class="footer">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
             <p>&copy; 2023 Nishan. All rights reserved.</p>
 
-        </div>
-
+            </div>
     </footer>
 
     <!-- External JavaScript file -->

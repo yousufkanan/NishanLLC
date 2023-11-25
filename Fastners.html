@@ -1,14 +1,13 @@
 <!DOCTYPE html> 
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Fastners and Materials</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastners</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add the styles from index.html and about_us.html here */
-        /* BEGIN: Styles from index.html */
+        /* Add custom styles here */
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
@@ -46,6 +45,11 @@
             text-decoration: none;
         }
 
+        /* Highlight the hovered menu items */
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
         section {
             padding: 20px;
         }
@@ -60,9 +64,10 @@
 
         /* BEGIN: Styles from about_us.html */
         h1 {
-            color: #333;
+            color: #ffffff;
             font-size: 24px;
             margin-bottom: 10px;
+          
         }
 
         p {
@@ -80,44 +85,52 @@
             margin-bottom: 20px;
         }
 
-        .footer-links ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        /* BEGIN: Styles for products sub menu */
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: none;
         }
 
-        .footer-links ul li {
-            display: inline;
-            margin-right: 10px;
+        .submenu li {
+            display: block;
+            margin-bottom: 5px;
         }
 
-        .footer-links ul li a {
+        .submenu li a {
             color: #fff;
             text-decoration: none;
         }
-        /* END: Styles from about_us.html */
+
+        /* END: Styles for products sub menu */
     </style>
 </head>
+
 <body>
-        <header>
-            <div class="container">
-                <h1>Nishan Consulting Firm</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li>
-                            <a href="#products">Products</a>
-                            <ul class="submenu">
-                                <li><a href="Fastners.html">Fasteners</a></li>
-                                <li><a href="#product2">Product 2</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">Nishan Consulting Firm</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li>
+                        <a href="#products">Products</a>
+                        <ul class="submenu">
+                            <li><a href="Fastners.html">Fasteners</a></li>
+                            <li><a href="welding.html">Welding</a></li>
+                            <li><a href="printed_circut_board.html">PCB's</a></li>
+                            <li><a href="machining.html">Machining</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
         <section>
             <h2>Fastners and Materials</h2>
             <p>Products include: bolts, studs, screws, nuts, washers, pins, rivets, components connection pairs and welding nails 12 types of parts. Hardface Overlay Plate for Cement and Mining.</p>
@@ -186,17 +199,13 @@
                     <p>Email: asimjan@nishanltd.com</p>
                     <p>Phone: 202-492-6099</p>
                 </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <p>&copy; 2023 Nishan. All rights reserved.</p>
+    
                 </div>
-            </div>
-            <p>&copy; 2023 Nishan. All rights reserved.</p>
         </footer>
     </div>
+
+    <script src="subMenus.js"></script>
+
 </body>
 </html>

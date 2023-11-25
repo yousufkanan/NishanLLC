@@ -9,18 +9,23 @@
             /* Add custom styles here */
             body {
                 font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
+                background-color: #f2f2f2;
             }
     
             header {
-                background-color: #f2f2f2;
+                background-color: #333;
+                color: #fff;
                 padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
     
-            h1 {
-                color: #333;
-                margin: 0;
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #fff;
             }
     
             nav ul {
@@ -35,25 +40,17 @@
             }
     
             nav ul li a {
+                color: #fff;
                 text-decoration: none;
-                color: #333;
+            }
+    
+            /* Highlight the hovered menu items */
+            nav ul li a:hover {
+                background-color: #555;
             }
     
             section {
-                padding: 50px 0;
-                text-align: center;
-            }
-    
-            .banner {
-                background-color: #f9f9f9;
                 padding: 20px;
-            }
-    
-            .about,
-            .services,
-            .testimonials,
-            .cta {
-                margin-bottom: 50px;
             }
     
             footer {
@@ -62,48 +59,72 @@
                 padding: 20px;
                 text-align: center;
             }
+            /* END: Styles from index.html */
     
-            .footer-info,
-            .footer-links {
-                margin-bottom: 20px;
-            }
-    
-            .footer-links ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-    
-            .footer-links ul li a {
-                text-decoration: none;
-                color: #fff;
-            }
-            
-            /* Additional styles for sections */
-            section h2 {
-                color: #333;
+            /* BEGIN: Styles from about_us.html */
+            h1 {
+                color: #ffffff;
                 font-size: 24px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+              
             }
-            
-            section p {
+    
+            p {
                 color: #666;
                 font-size: 16px;
                 line-height: 1.5;
+            }
+    
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+    
+            .footer-info {
                 margin-bottom: 20px;
             }
+    
+            /* BEGIN: Styles for products sub menu */
+            .submenu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                display: none;
+            }
+    
+            .submenu li {
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            .submenu li a {
+                color: #fff;
+                text-decoration: none;
+            }
+    
+            /* END: Styles for products sub menu */
         </style>
     </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>Nishan Consulting Firm</h1>
+            <h1><a href="index.html" style="color: white; text-decoration: none;">Nishan Consulting Firm</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li>
+                        <a href="#products">Products</a>
+                        <ul class="submenu">
+                            <li><a href="Fastners.html">Fasteners</a></li>
+                            <li><a href="welding.html">Welding</a></li>
+                            <li><a href="printed_circut_board.html">PCB's</a></li>
+                            <li><a href="machining.html">Machining</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -111,7 +132,7 @@
 
     <section>
         <div class="container">
-            <h1>About Nishan</h1>
+            <h2>About Nishan</h2>
             <p>
                 Dedicated to exceeding customer expectations, Nishan is committed to providing products of the highest quality. Our operations, based in Allentown Pennsylvania, encompass custom machining and component manufacturing of diverse electrical and mechanical parts. Our extensive services include CNC plasma/laser cutting, CNC machining, sheet metal fabrications, 3D printing and PCB design, layout and assembly.
             </p>
@@ -140,25 +161,17 @@
     </section>
 
     <footer>
-            <div class="container">
-                <!-- Footer Content -->
-                <div class="footer-info">
-                    <h3>Contact Information</h3>
-                    <p>Address: 145 Mickley Rd Office 101, Whitehall PA, 18052</p>
-                    <p>Email: asimjan@nishanltd.com</p>
-                    <p>Phone: 202-492-6099</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="footer-info">
+                <h3>Contact Information</h3>
+                <p>Address: 145 Mickley Rd Office 101, Whitehall PA, 18052</p>
+                <p>Email: asimjan@nishanltd.com</p>
+                <p>Phone: 202-492-6099</p>
             </div>
             <p>&copy; 2023 Nishan. All rights reserved.</p>
 
+            </div>
     </footer>
 </body>
 </html>
